@@ -30,10 +30,10 @@ More info: [Theme Page](http://genbutheme.com/)
 * Content / Sidebar 1 / Sidebar 2
 * Sidebar 1 / Content / Sidebar 2
 
-Layout info:
-* **Content**: Main content of the page.
-* **Sidebar 1**: 300px width.
-* **Sidebar 2**: 160px width.
+**Layout info:**
+* Content: Main content of the page.
+* Sidebar 1: 300px width.
+* Sidebar 2: 160px width.
 
 ### Menus
 * **Navigation**<br/>
@@ -48,12 +48,14 @@ You can set custom background via WP Customize or Background settings page.
 ### Custom Header Image:
 
 Genbu have custom header feature you can set custom header image via WP Customize or header settings page.
-* **As banner image**: when displaying the header text, the header image will be used as banner image below site title and description.
-* **As logo**: when not using header text, header image will be used as logo.
+* **As banner image**<br/>
+when displaying the header text, the header image will be used as banner image below site title and description.
+* **As logo**<br/>
+when not using header text, header image will be used as logo.
 
 ### Editor Style:
 
-Genbu is using editor style, so you'll see what you get in your WordPress visual editor.
+You'll see what you get in your WordPress visual editor.
 
 ### Translation Ready:
 
@@ -61,32 +63,34 @@ You can translate this theme using pot file located at languages folder.
 
 ## CSS and JS
 
-### Stylesheets
+### CSS
 CSS files loaded in this theme (in order):
-* **Open Sans**<br/>
+* **Open Sans Font**<br/>
 Main font used in this theme.<br/>
 Handle: `theme-open-sans-font`<br/>
-Style: 400,300,300italic,400italic,600,600italic,700,700italic,800,800italic<br/>
+Style: 300,300italic,400,400italic,600,600italic,700,700italic,800,800italic<br/>
 Location: Google Font
 * **Dashicons**<br/>
 Font icon used in this theme.<br/>
 Handle: `dashicons`<br/>
 Location: WordPress.
 * **Main Stylesheet**<br/>
-The main stylesheet.<br/>
+The main stylesheet (read below).<br/>
 Handle: `style` or `parent` (if using child theme)<br/>
 Location: style.min.css<br/>
 size: 35kb
+* **Editor Styles**
+This stylesheets only loaded in WordPress Content Editor/TinyMCE (read below)
 
 #### Main Stylesheet:
-The Main style.css is a merge and minification of (in order):
+The theme main stylesheet refer to style.css or style.min.css and this file is a merge of (in order):
 * **Reset CSS**<br/>
 Base style and set style defaults.<br/>
 Handle: `theme-reset`<br/>
 Location: css/reset.min.css<br/>
 Size: 10kb
 * **Menus CSS**<br/>
-Base navigation style<br/>
+Base navigation menus style<br/>
 Handle: `theme-menus`<br/>
 Location: css/menus.min.css<br/>
 Size: 5kb
@@ -101,20 +105,40 @@ Handle: `media-queries`<br/>
 Location: css/media-queries.min.css<br/>
 Size: 5kb
 
-### JS files used in this theme:
-* jQuery (required library): part of WordPress
-* Fitvids (responsive video library): js/fitvids.min.js (only 3kb)
-* Theme JS (custom and setting for other script): located at /js/theme.min.js (only 2kb)
 
-### Editor CSS files used in this theme (in order):
-* Open Sans: via Google Font
-* Theme Reset (set default for element styling): located at /css/reset.min.css (10kb)
-* Editor Style (if using child theme, child theme /css/editor.css will also loaded): located at /css/editor.css (1kb)
+#### Editor Styles:
+* **Open Sans Font**<br/>
+Main font used in this theme.<br/>
+Style: 300,300italic,400,400italic,600,600italic,700,700italic,800,800italic<br/>
+Location: Google Font
+* **Reset CSS**<br/>
+Base style and set style defaults.<br/>
+Location: css/reset.min.css<br/>
+Size: 10kb
+* **Editor CSS**<br/>
+Additional editor style.<br/>
+Location: css/editor.css<br/>
+Size: 1kb
 
-### CSS and JS Override
-Child theme can override parent theme CSS and JS by creating the file(s) in the same location except for main stylesheet, parent theme style{.min}.css, external script such as Google Font, and scripts bundled in WordPress such as Dashicons.
 
-### Links
+### JS
+* **jQuery**<br/>
+jQuery is the required library.<br/>
+Handle: `jquery`<br/>
+Location: WordPress
+* **Fitvids**
+Library to handle responsive video<br/>
+Handle: `theme-fitvids`<br/>
+Location: js/fitvids.min.js<br/>
+Size: 3kb
+* **Theme JS**
+Theme custom script, and also setting for other script/library when applicable.
+Handle: `theme-js`<br/>
+Location: js/theme.min.js<br/>
+Size: 2kb
+
+
+## Links
 
 * [Github project page](https://github.com/turtlepod/genbu)
 * [Theme page](http://genbutheme.com/)
@@ -128,7 +152,7 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 
 ## Changelog:
 
-### 1.3.0
+**1.3.0**
 * update to Hybrid Core version 2.0.3
 * update Tamatebako to version 2.0.0
 * remove unused scripts and style. child theme should add it themselves (for version compatibility). sorry for this :(
@@ -137,7 +161,7 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * CSS is merged to main stylesheet.
 * Removing Grunt, make it clean.
 
-### 1.2.2
+**1.2.2**
 * use tamatebako_theme_file() and not hybrid_locate_theme_file().
 * change hook "genbu_after_theme_setup" to "genbu_after_setup_theme".
 * Clean up content folder, add singular template for all post format.
@@ -150,10 +174,10 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Remove wp_link_pages args in content/*.
 * Remove all blank index.html
 
-### 1.2.1
+**1.2.1**
 * Update minified.
 
-### 1.2.0
+**1.2.0**
 * Use Grunt (private use): node_modules folder, package.json, and Gruntfile.js is not added in theme.
 * Change stylesheet load method.
 * add editor-style.css (reset.css + style.css)
@@ -163,7 +187,7 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Fix Pre element display (overflow) on mobile.
 * Fix Editor Style (WP 4.0 Editor Auto resize feature).
 
-### 1.1.0
+**1.1.0**
 * add license.txt
 * update tamatebako to version 1.0.1
 * fix media queries menu, and add dash 1st sub-menu too.
@@ -172,11 +196,11 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Update HC to version 2.0.1 + Tamatebako 1.1.0
 * Update lang files
 
-### 1.0.0
+**1.0.0**
 * Push to version 1.0.0
 * now using [Semantic Versioning](http://semver.org/)
 
-### 0.1.4
+**0.1.4**
 * Disable comment error on Page (post type).
 * Add basic support for WooCommerce Plugin.
 * Add basic support for The Events Calendar Plugin.
@@ -195,7 +219,7 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Add flexslider and examples in how to use it.
 * Restructure "tamatebako"; better inline docs; remove "edit *" filter.
 
-### 0.1.3
+**0.1.3**
 * Read more no longer using filter, now using template function.
 * Better Accessibility Feature for Menus and Links
 * bbPress and BuddyPress Support
@@ -205,14 +229,14 @@ This theme is licensed under the [GNU General Public License](http://www.gnu.org
 * Separate load for reset(base) CSS and Menus CSS
 * Fix Editor Style
 
-### 0.1.2
+**0.1.2**
 * Better style
 * Better read more
 
-### 0.1.1
+**0.1.1**
 * Fix string function
 * Fix css bug
 * Add custom header image support
 
-### 0.1.0
+**0.1.0**
 * Initial version

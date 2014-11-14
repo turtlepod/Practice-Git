@@ -1,16 +1,25 @@
 # Genbu WordPress Theme
 
-## About:
+## About
 
 **Author:** David Chandra Purnama <br/>
 ( [@turtlepod](http://twitter.com/turtlepod) / [shellcreeper.com](http://shellcreeper.com/) )
 
 Genbu theme is an clean and simple responsive theme built with search-engine optimization (SEO) in mind by utilizing the most current HTML5 conventions and [Schema.org](http://schema.org) microdata.
 
-More info: [Genbu Theme](http://genbutheme.com/)
+More info: [Theme Page](http://genbutheme.com/)
 
-### Theme Layouts
-Genbu is powered with 9 Layout, You can set the layout globally via WordPress customizer or using Layout Meta Box in post edit screen.
+## Features
+
+* (9) Layouts
+* (2) Sidebar
+* (2) Menus 
+* Custom Background
+* Custom Header Image
+* Editor Style
+* Translation Ready
+
+### Layouts
 * Content (No Sidebar)
 * Content / Sidebar 1
 * Sidebar 1 / Content
@@ -21,20 +30,20 @@ Genbu is powered with 9 Layout, You can set the layout globally via WordPress cu
 * Content / Sidebar 1 / Sidebar 2
 * Sidebar 1 / Content / Sidebar 2
 
-#### Info
+Layout info:
 * **Content**: Main content of the page.
-* **Sidebar 1**: Primary Sidebar (300px width).
-* **Sidebar 2**: Secondary Sidebar (160px width).
+* **Sidebar 1**: 300px width.
+* **Sidebar 2**: 160px width.
 
-### Navigation Menus
-
-Genbu have two navigation menus.
-* **Primary Navigation**: located below header with search form on the right side. On mobile device will use toggle and using menu name as toggle. When not set, it will display link to home page.
-* **Footer Links**: will be displayed as simple links in footer area. If not set, will not displayed.
+### Menus
+* **Navigation**<br/>
+Located below header with search form on the right side. On mobile device will use toggle and using menu name as toggle. When not set, it will display link to home page.
+* **Footer Links**<br/>
+Will be displayed as simple links in footer area. If not set, will not be displayed.
 
 ### Custom Background:
 
-Genbu have custom background feature you can set custom background via WP Customize or background settings page.
+You can set custom background via WP Customize or Background settings page.
 
 ### Custom Header Image:
 
@@ -49,6 +58,8 @@ Genbu is using editor style, so you'll see what you get in your WordPress visual
 ### Translation Ready:
 
 You can translate this theme using pot file located at languages folder.
+
+## CSS and JS
 
 ### Stylesheets
 CSS files loaded in this theme (in order):
@@ -67,12 +78,28 @@ Handle: `style` or `parent` (if using child theme)<br/>
 Location: style.min.css<br/>
 size: 35kb
 
-#### Main Stylesheet
+#### Main Stylesheet:
 The Main style.css is a merge and minification of (in order):
-* Reset CSS (base and defaults style): located at /css/reset.min.css (10kb)
-* Menus CSS (base navigation style): located at /css/menus.min.css (5kb)
-* Theme CSS (custom unique theme style): located at /css/theme.min.css (16kb)
-* Media Queries CSS (responsive style): located at /css/media-queries.min.css (5kb)
+* **Reset CSS**<br/>
+Base style and set style defaults.<br/>
+Handle: `theme-reset`<br/>
+Location: css/reset.min.css<br/>
+Size: 10kb
+* **Menus CSS**<br/>
+Base navigation style<br/>
+Handle: `theme-menus`<br/>
+Location: css/menus.min.css<br/>
+Size: 5kb
+* **Theme CSS**<br/>
+Theme custom style<br/>
+Handle: `theme`<br/>
+Location: css/theme.min.css<br/>
+Size: 16kb
+* **Media Queries CSS**<br/>
+Responsive style<br/>
+Handle: `media-queries`<br/>
+Location: css/media-queries.min.css<br/>
+Size: 5kb
 
 ### JS files used in this theme:
 * jQuery (required library): part of WordPress

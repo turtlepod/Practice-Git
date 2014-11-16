@@ -46,8 +46,8 @@
 * Update lang files
 
 **1.0.0**
-* Push to version 1.0.0
-* now using [Semantic Versioning](http://semver.org/)
++ Push to version 1.0.0
++ now using [Semantic Versioning](http://semver.org/)
 
 **0.1.4**
 * Disable comment error on Page (post type).

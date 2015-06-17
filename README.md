@@ -1,4 +1,4 @@
-Get your Practice-Git on! (edit more)
+Get your Practice-Git on! (edit more...)
 ============
 
 * Git Reference................................................[http://gitref.org/basic](http://gitref.org/basic)

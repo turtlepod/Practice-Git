@@ -1,5 +1,5 @@
 Get your Practice-Git on! (edit more...)
-===============
+=================
 
 * Git Reference................................................[http://gitref.org/basic](http://gitref.org/basic)
 * Pro Git Online Book..........................................[http://git-scm.com/book](http://git-scm.com/book)
